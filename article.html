@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стаття — EcoPharma</title>
+  <meta name="description" content="Детальний перегляд статті фармацевтичної компанії EcoPharma." />
+
+  <!-- Шрифт: Inter Tight -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Власні стилі -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ===== Хедер (білий, для внутрішніх сторінок) ===== -->
+  <header class="page-header">
+    <div class="page-header-row">
+      <a href="index.html" class="page-logo" aria-label="ЕкоФарм">
+        <img src="assets/logo-white.svg" alt="ЕкоФарм" />
+      </a>
+      <nav class="page-nav">
+        <a href="index.html#about">Про нас</a>
+        <a href="news.html">Новини</a>
+        <a href="index.html#">Наука</a>
+      </nav>
+      <div class="page-header-contact">
+        <a href="tel:+380930347432" class="page-phone">+38 (093) 034 74 32</a>
+        <a href="branches.html" class="btn-lime btn-lime--sm">Відділення</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Головний контент статті ===== -->
+  <main class="article-page bg-white">
+    
+    <!-- Верхня секція: Breadcrumbs, Title, Meta, Share -->
+    <div class="article-top-section">
+      <nav class="bp-breadcrumb" aria-label="Хлібні крихти">
+        <a href="index.html">Головна</a>
+        <i class="bi bi-chevron-right"></i>
+        <a href="news.html">Новини</a>
+        <i class="bi bi-chevron-right"></i>
+        <span class="text-truncate d-inline-block align-middle" style="max-width: 300px;" id="articleBreadcrumbTitle">...</span>
+      </nav>
+      
+      <h1 class="article-main-title" id="articleMainTitle">...</h1>
+      
+      <div class="article-meta-row">
+        <div class="article-meta-info">
+          <span id="articleDate">11 Jan 2022</span>
+          <span class="article-meta-dot">•</span>
+          <span id="articleReadTime">5 min read</span>
+        </div>
+        
+        <div class="article-share-buttons">
+          <button class="share-btn copy-link-btn" aria-label="Копіювати посилання"><i class="bi bi-link-45deg"></i></button>
+          <button class="share-btn" aria-label="Поділитися в LinkedIn"><i class="bi bi-linkedin"></i></button>
+          <button class="share-btn" aria-label="Поділитися в X"><i class="bi bi-twitter-x"></i></button>
+          <button class="share-btn" aria-label="Поділитися в Facebook"><i class="bi bi-facebook"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Обкладинка статті -->
+    <div class="article-cover-container">
+      <div class="article-cover-wrapper">
+        <img src="assets/news-1.png" alt="Обкладинка новини" id="articleCoverImg" />
+      </div>
+    </div>
+
+    <!-- Вміст статті -->
+    <div class="article-body-section">
+      <div class="article-body-inner">
+        <div class="article-rich-text" id="articleRichText">
+          <!-- Завантажується динамічно через JS -->
+        </div>
+
+        <!-- Нижній блок поширення -->
+        <div class="article-bottom-share pt-4 mt-5">
+          <p class="article-bottom-share-label">Share this post</p>
+          <div class="article-share-buttons">
+            <button class="share-btn copy-link-btn" aria-label="Копіювати посилання"><i class="bi bi-link-45deg"></i></button>
+           </div>
+    </div>
+
+    <!-- ===== Секція схожих статей (Figma Grid) ===== -->
+    <div class="article-related-section">
+      <h2 class="article-related-title">Related Articles</h2>
+      <div class="row g-4 row-cols-1 row-cols-md-3" id="relatedArticlesRow">
+        <!-- Завантажується динамічно через JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Футер ===== -->
+  <footer class="site-footer">
+    <div class="footer-bg-logo" aria-hidden="true"></div>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="ЕкоФарм">
+            <div class="footer-logo" role="img" aria-label="ЕкоФарм"></div>
+          </a>
+          <p class="footer-desc">
+            Ми сучасна фармацевтична компанія, яка розвиває напрямок аптечного виготовлення лікарських засобів з
+            урахуванням індивідуальних початкових потреб пацієнтів.
+          </p>
+        </div>
+        <nav class="footer-nav-col" aria-label="Головне меню сайту">
+          <a href="index.html">Головна</a>
+          <a href="news.html">Новини</a>
+          <a href="index.html#">Наука</a>
+        </nav>
+        <nav class="footer-nav-col" aria-label="Розділи компанії">
+          <a href="branches.html">Відділення</a>
+          <a href="#licenses">Ліцензії</a>
+          <a href="#careers">Вакансії</a>
+        </nav>
+        <div class="footer-contacts">
+          <a href="https://facebook.com/ecopharma" class="footer-contact-item" target="_blank" rel="noopener">
+            <svg class="footer-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 8.049C14 4.724 11.313 2 8 2s-6 2.724-6 6.049c0 3.019 2.2 5.52 5.083 5.977V9.92H5.458V8.05h1.625V6.671c0-1.613.955-2.503 2.41-2.503.698 0 1.428.125 1.428.125v1.583h-.805c-.793 0-1.04.495-1.04 1.003V8.05h1.77l-.283 1.869H9.076v4.106C11.8 13.569 14 11.068 14 8.049z" fill="white" />
+            </svg>
+            <span>ecopharma</span>
+          </a>
+          <a href="https://instagram.com/ecopharma" class="footer-contact-item" target="_blank" rel="noopener">
+            <svg class="footer-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 2.882c1.653 0 1.848.006 2.498.036 1.664.076 2.51.937 2.586 2.585.03.65.036.844.036 2.497s-.006 1.847-.036 2.497c-.076 1.647-.921 2.51-2.586 2.585-.65.03-.843.037-2.498.037-1.652 0-1.847-.006-2.497-.037-1.667-.076-2.51-.94-2.586-2.585C2.887 9.847 2.88 9.654 2.88 8s.007-1.847.037-2.497c.076-1.649.921-2.51 2.586-2.585.65-.03.844-.036 2.497-.036zM8 1.75c-1.681 0-1.891.007-2.551.038-2.255.103-3.507 1.353-3.61 3.61C1.808 6.059 1.8 6.27 1.8 8s.008 1.942.039 2.602c.103 2.255 1.353 3.507 3.61 3.61.66.031.87.038 2.551.038s1.942-.007 2.602-.038c2.252-.103 3.508-1.353 3.61-3.61.031-.66.038-.871.038-2.602 0-1.73-.007-1.941-.038-2.601-.102-2.252-1.355-3.507-3.61-3.61C9.942 1.757 9.731 1.75 8 1.75zm0 1.62a2.63 2.63 0 1 0 0 5.26 2.63 2.63 0 0 0 0-5.26zm0 4.337a1.708 1.708 0 1 1 0-3.416 1.708 1.708 0 0 1 0 3.416zm3.35-4.44a.614.614 0 1 0 0-1.229.614.614 0 0 0 0 1.229z" fill="white" />
+            </svg>
+            <span>ecopharma</span>
+          </a>
+          <a href="tel:+380320000000" class="footer-contact-item">
+            <svg class="footer-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 12H6v-1h4v1zm1-2.5H5v-8h6v8zM8 2.5a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1z" fill="white" />
+            </svg>
+            <span>+380 (032) 000 00 00</span>
+          </a>
+          <a href="mailto:email@ecopharm.com" class="footer-contact-item">
+            <svg class="footer-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M13.5 2.5h-11a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1zm-11 1h11l-5.5 4L2.5 3.5zm0 9V4.854l5.2 3.597a.5.5 0 0 0 .6 0L14.5 4.854V12.5h-12z" fill="white" />
+            </svg>
+            <span>email@ecopharm.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-row">
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+          <p class="footer-copyright">© <span id="year"></span> ЕкоФарм. Усі права захищені.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Логіка для динамічного контенту -->
+  <script>
+    // База даних новин
+    const articlesData = {
+      1: {
+        title: "Мережа виробничих аптек ТОВ «ФК«Екофарм» розширюється!",
+        category: "Компанія",
+        date: "11 Jan 2022",
+        readTime: "5 min read",
+        image: "assets/news-1.png",
+        desc: "У рамках національної стратегії розвитку локального аптечного виробництва в Україні вже працюють перші ліцензовані виробничі аптеки «Екофарм»:",
+        content: `
+          <h2>Introduction</h2>
+          <p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+          <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.</p>
+          
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-2.png" alt="Виробнича аптека" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Image caption goes here</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.</p>
+          <p>Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.</p>
+          
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus."
+            </blockquote>
+          </div>
+
+          <p>Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.</p>
+          
+          <h2>Conclusion</h2>
+          <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.</p>
+          <p>Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.</p>
+          <p>Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc tortor. Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.</p>
+        `
+      },
+      2: {
+        title: "Де нас знайти?",
+        category: "Новина",
+        date: "12 Jan 2022",
+        readTime: "5 min read",
+        image: "assets/news-2.png",
+        desc: "Дізнайтеся адреси, контакти та розташування наших ліцензованих виробничих аптек у Києві, Дніпрі, Вінниці та інших містах.",
+        content: `
+          <h2>Introduction</h2>
+          <p>Розвиваючи національну мережу, ми прагнемо бути ближче до кожного пацієнта. У цій статті ми детально розповідаємо про географію наших ліцензованих аптек та особливості їхньої роботи в різних регіонах.</p>
+          <p>Наразі наші відділення успішно працюють у кількох ключових обласних центрах, забезпечуючи високу якість виготовлення ліків та сервіс.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-3.png" alt="Мапа відділень" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Мапа представництв по всій Україні</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Кожне відділення оснащене за останніми стандартами та готове надати кваліфіковану допомогу фармацевта для підбору оптимальних засобів.</p>
+          <p>Ми постійно вдосконалюємо логістику та сервіс, щоб замовлені ліки індивідуального виготовлення доставлялися пацієнтам у найкоротші терміни із дотриманням усіх вимог щодо температурного режиму.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Доступність якісних ліків у кожному куточку України — це наша місія, яку ми втілюємо щодня, відкриваючи нові аптеки та розширюючи партнерську мережу."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>Завдяки розширенню нашої мережі, пацієнти мають змогу отримувати ефективні ліки індивідуального виготовлення максимально швидко та зручно. Слідкуйте за оновленнями на нашому сайті, щоб дізнатися про відкриття нових відділень у вашому місті.</p>
+        `
+      },
+      3: {
+        title: "Мережа виробничих аптек ТОВ «ФК«Екофарм» розширюється! (продовження)",
+        category: "Новина",
+        date: "15 Jan 2022",
+        readTime: "5 min read",
+        image: "assets/news-3.png",
+        desc: "Оптимізація логістичних процесів та впровадження нових маршрутів для оперативної доставки препаратів безпосередньо до пацієнтів.",
+        content: `
+          <h2>Introduction</h2>
+          <p>Ми продовжуємо активно розвивати мережу локальних аптек «Екофарм» та вдосконалювати процеси доставки. Нова стратегія компанії спрямована на оптимізацію роботи з логістичними компаніями.</p>
+          
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-1.png" alt="Доставка ліків" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Оперативна логістика та збереження властивостей ліків</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Це дозволить значно знизити вартість ліків для кінцевого споживача, а також підвищити оперативність доставки препаратів безпосередньо до пацієнта.</p>
+          
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Швидкість та якість доставки термочутливих ліків — це критично важливий елемент сучасної фармації, над яким наша команда працює щодня."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>Впровадження нових технологій пакування та контролю температурного режиму під час транспортування дозволяє нам гарантувати повну безпечність та терапевтичну активність наших препаратів.</p>
+        `
+      },
+      4: {
+        title: "ЕкоФарм отримала сертифікат відповідності GMP",
+        category: "Ліцензії",
+        date: "20 Feb 2022",
+        readTime: "6 min read",
+        image: "assets/news-2.png",
+        desc: "Наша компанія успішно пройшла аудит та отримала сертифікацію виробництва за стандартами належної виробничої практики (GMP).",
+        content: `
+          <h2>GMP Сертифікація</h2>
+          <p>Наша компанія успішно пройшла аудит та отримала сертифікацію виробництва за стандартами належної виробничої практики (GMP). Это важлива віха у розвитку нашого виробництва.</p>
+          <p>Стандарти GMP регулюють і контролюють кожен аспект виробничого процесу: від навчання персоналу та чистоти повітря в лабораторіях до ведення документації та тестування сировини.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-2.png" alt="GMP Лабораторія" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Наша лабораторія відповідає стандартам GMP</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Отримання цього сертифікату доводить, що продукція EcoPharma виготовляється на найвищому світовому рівні якості та безпеки.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Якість ліків — це безпека життя пацієнтів. Отримання сертифікату GMP підтверджує наше прагнення до досконалості на кожному етапі створення препаратів."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>Ми вдячні всій нашій команді за зусилля, докладені для проходження аудиту, та продовжуємо працювати над впровадженням інноваційних стандартів на користь наших пацієнтів.</p>
+        `
+      },
+      5: {
+        title: "Інноваційні технології в аптечному виготовленні ліків",
+        category: "Наукові статті",
+        date: "05 Mar 2022",
+        readTime: "7 min read",
+        image: "assets/news-1.png",
+        desc: "ЕкоФарм впроваджує сучасні світові стандарти у процес виготовлення екстемпоральних лікарських засобів.",
+        content: `
+          <h2>Introduction</h2>
+          <p>Персоналізована медицина стає все більш популярною в усьому світі. Аптечне виготовлення ліків (екстемпоральна рецептура) є ключовим інструментом цього напрямку, оскільки дозволяє підбирати індивідуальні дозування.</p>
+          <p>Сучасна лабораторія EcoPharma використовує передові технології для розробки та виготовлення індивідуальних лікарських засобів, які повністю враховують потреби кожного пацієнта.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-3.png" alt="Технології виготовлення" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Сучасне обладнання для точного дозування</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Завдяки використанню стандартизованої сировини та високоточного обладнання ми можемо гарантувати стабільність та безпечність кожного виготовленого препарату.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Кожна людина унікальна, і її лікування також має бути унікальним. Інноваційні технології дають нам змогу адаптувати формулу препарату під конкретного пацієнта."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>Впровадження передових світових практик в аптечне виготовлення відкриває нові можливості для терапії складних захворювань та покращення якості життя пацієнтів.</p>
+        `
+      },
+      6: {
+        title: "Медичний канабіс: нові клінічні дослідження та результати",
+        category: "Наукові статті",
+        date: "12 Mar 2022",
+        readTime: "8 min read",
+        image: "assets/news-3.png",
+        desc: "Останні дослідження підтверджують високу ефективність лікарських засобів на основі канабіноїдів.",
+        content: `
+          <h2>Клінічні дослідження</h2>
+          <p>Ми раді поділитися результатами нещодавніх клінічних випробувань препаратів на основі канабіноїдів, що застосовувалися у менеджменті неврологічних захворювань та хронічного болю.</p>
+          <p>Дослідження проводилися спільно з провідними українськими інститутами та медичними центрами протягом останніх шести місяців.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-1.png" alt="Дослідження канабісу" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Лабораторний аналіз активних компонентів медичного канабісу</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Зафіксовано статистично значуще покращення загального стану пацієнтів та зменшення вираженості симптомів у 75% випадків.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Результати клінічних досліджень підтверджують великий терапевтичний потенціал канабіноїдів та відкривають нові перспективи для розвитку вітчизняної медичної практики."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>EcoPharma продовжує інвестувати у наукові дослідження, щоб надавати українським лікарям та пацієнтам доказові рішення для ефективного та безпечного лікування.</p>
+        `
+      },
+      7: {
+        title: "Як підтримати імунітет під час сезонних змін: поради фармацевта",
+        category: "Блог",
+        date: "18 Apr 2022",
+        readTime: "4 min read",
+        image: "assets/news-1.png",
+        desc: "Прості та дієві рекомендації від наших провідних спеціалістів для зміцнення вашого організму у міжсезоння.",
+        content: `
+          <h2>Поради фармацевта</h2>
+          <p>Зміна погоди та перехідні сезони завжди є випробуванням для захисних сил нашого організму. Наш головний фармацевт Олена Ковальчук підготувала прості, але дієві поради для зміцнення імунітету.</p>
+          <p>Важливо пам'ятати, що імунітет — це комплексна система, яка потребує щоденної підтримки.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-2.png" alt="Вітаміни та імунітет" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Правильна підтримка імунної системи природними засобами</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Регулярні прогулянки, повноцінний сон та раціональне харчування — це основа, яку можна підсилити вітамінними комплексами.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Не намагайтеся штучно стимулювати імунітет ліками без потреби. Здоровий спосіб життя та профілактичний прийом органічних вітамінів — найкращий захист."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>У разі потреби ви завжди можете отримати безкоштовну консультацію фармацевта в будь-якій аптеці нашої мережі для вибору якісних вітамінів та добавок.</p>
+        `
+      },
+      8: {
+        title: "Історія розвитку екстемпорального виготовлення ліків",
+        category: "Блог",
+        date: "25 Apr 2022",
+        readTime: "10 min read",
+        image: "assets/news-2.png",
+        desc: "Від стародавніх алхіміків до високотехнологічних лабораторій XXI століття.",
+        content: `
+          <h2>Історія фармації</h2>
+          <p>Аптечне виготовлення ліків за індивідуальними прописами лікаря має багатовікову історію. У цій статті ми простежимо шлях розвитку екстемпоральної рецептури від давнини до сьогодення.</p>
+          <p>Протягом багатьох століть кожна аптека була унікальною лабораторією, де створювалися ліки для конкретного пацієнта.</p>
+
+          <div class="article-figure-wrapper my-5">
+            <div class="article-figure-img">
+              <img src="assets/news-3.png" alt="Історія аптеки" />
+            </div>
+            <div class="article-figure-caption">
+              <p>Виготовлення ліків в аптечних лабораторіях минулого</p>
+            </div>
+          </div>
+
+          <p class="article-lead-text">Масове промислове виробництво XX століття витіснило екстемпоральний напрямок, проте сьогодні він переживає нове народження.</p>
+
+          <div class="article-quote-wrapper my-5">
+            <blockquote class="article-quote">
+              "Сучасне аптечне виготовлення ліків поєднує стародавні традиції індивідуального підходу та новітні наукові розробки та стандарти безпеки."
+            </blockquote>
+          </div>
+
+          <h2>Conclusion</h2>
+          <p>Сьогодні EcoPharma відроджує культуру аптечного виготовлення в Україні, поєднуючи класичні рецептурні традиції та високі технології сучасної індустрії.</p>
+        `
+      }
+    };
+
+    // Отримуємо ID статті з URL параметрів
+    function getArticleId() {
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get("id"));
+      return articlesData[id] ? id : 1; // За дефолтом показуємо 1 статтю
+    }
+
+    // Заповнюємо сторінку даними
+    function renderArticle() {
+      const id = getArticleId();
+      const article = articlesData[id];
+
+      // Оновлюємо тайтл вкладки браузера
+      document.title = `${article.title} — EcoPharma`;
+
+      // Заповнюємо елементи DOM
+      document.getElementById("articleBreadcrumbTitle").textContent = article.title;
+      document.getElementById("articleMainTitle").textContent = article.title;
+      document.getElementById("articleDate").textContent = article.date;
+      document.getElementById("articleReadTime").textContent = article.readTime;
+      
+      const coverImg = document.getElementById("articleCoverImg");
+      if (coverImg) {
+        coverImg.src = article.image;
+        coverImg.alt = article.title;
+      }
+
+      document.getElementById("articleRichText").innerHTML = article.content;
+
+      // Рендеримо схожі статті
+      renderRelatedArticles(id);
+    }
+
+    // Рендер схожих статей
+    function renderRelatedArticles(currentId) {
+      const relatedRow = document.getElementById("relatedArticlesRow");
+      if (!relatedRow) return;
+
+      relatedRow.innerHTML = "";
+
+      // Отримуємо 3 інші статті циклично
+      const relatedIds = [];
+      let nextId = currentId;
+      for (let i = 0; i < 3; i++) {
+        nextId = (nextId % 8) + 1;
+        relatedIds.push(nextId);
+      }
+
+      relatedIds.forEach(id => {
+        const art = articlesData[id];
+        const cardCol = document.createElement("div");
+        cardCol.className = "col";
+        cardCol.innerHTML = `
+          <a href="article.html?id=${id}" class="news-grid-card text-decoration-none">
+            <div class="news-grid-img-wrapper">
+              <img src="${art.image}" alt="${art.title}" class="news-grid-img" />
+            </div>
+            <div class="news-grid-card-body">
+              <div class="news-grid-meta">
+                <span class="news-grid-tag">${art.category}</span>
+                <span class="news-grid-read">${art.readTime}</span>
+              </div>
+              <h3 class="news-grid-title">${art.title}</h3>
+              <p class="news-grid-desc">${art.desc}</p>
+              <div class="news-grid-action">
+                <span class="news-grid-link">Читати повністю</span>
+                <i class="bi bi-chevron-right text-dark"></i>
+              </div>
+            </div>
+          </a>
+        `;
+        relatedRow.appendChild(cardCol);
+      });
+    }
+
+    // Копіювання посилання на статтю
+    function initShareButtons() {
+      document.querySelectorAll(".copy-link-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+              // Використовуємо функцію showToast, яка є у script.js
+              if (typeof showToast === "function") {
+                showToast("Посилання скопійовано у буфер обміну!");
+              } else {
+                alert("Посилання скопійовано!");
+              }
+            })
+            .catch(() => {
+              alert("Не вдалося скопіювати посилання.");
+            });
+        });
+      });
+    }
+
+    // Запуск при завантаженні
+    document.addEventListener("DOMContentLoaded", () => {
+      renderArticle();
+      initShareButtons();
+      // Ініціалізація року у футері
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

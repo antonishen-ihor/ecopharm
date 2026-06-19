@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — EcoPharma</title>
+  <meta name="description" content="Каталог товарів EcoPharma: ліки, вітаміни, БАДи, косметика та гігієна." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-eco" href="index.html"><i class="bi bi-flower1"></i> EcoPharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+        </ul>
+        <a href="catalog.html" class="btn btn-outline-eco position-relative ms-lg-3">
+          <i class="bi bi-cart3"></i> Кошик
+          <span id="cart-count"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-eco d-none">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Заголовок -->
+    <section class="bg-eco-light py-4">
+      <div class="container">
+        <h1 class="h3 mb-1">Каталог товарів</h1>
+        <p class="text-muted mb-0">Оберіть категорію або скористайтеся пошуком</p>
+      </div>
+    </section>
+
+    <section class="py-4">
+      <div class="container">
+        <!-- Панель фільтрів -->
+        <div class="row g-3 align-items-center mb-4">
+          <div class="col-lg-8">
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-eco active" data-filter="all">Усі</button>
+              <button class="btn btn-sm btn-outline-eco" data-filter="vitamins">Вітаміни</button>
+              <button class="btn btn-sm btn-outline-eco" data-filter="meds">Ліки</button>
+              <button class="btn btn-sm btn-outline-eco" data-filter="cosmetics">Косметика</button>
+              <button class="btn btn-sm btn-outline-eco" data-filter="hygiene">Гігієна</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+              <input type="text" id="catalog-search" class="form-control" placeholder="Пошук товару..." />
+            </div>
+          </div>
+        </div>
+
+        <!-- Сітка товарів -->
+        <div id="catalog-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+          <div class="col" data-category="vitamins" data-name="Вітамін C 1000 мг">
+            <div class="card product-card h-100">
+              <div class="product-img">💊</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Вітаміни</span>
+                <h6 class="card-title">Вітамін C 1000 мг</h6>
+                <p class="text-muted small flex-grow-1">Підтримка імунітету, 30 таблеток</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">189 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Вітамін C 1000 мг" data-price="189"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="vitamins" data-name="Омега-3">
+            <div class="card product-card h-100">
+              <div class="product-img">🐟</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Вітаміни</span>
+                <h6 class="card-title">Омега-3</h6>
+                <p class="text-muted small flex-grow-1">Риб'ячий жир, 90 капсул</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">410 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Омега-3" data-price="410"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="vitamins" data-name="Магній B6">
+            <div class="card product-card h-100">
+              <div class="product-img">🧪</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Вітаміни</span>
+                <h6 class="card-title">Магній B6</h6>
+                <p class="text-muted small flex-grow-1">Проти стресу та втоми, 60 таблеток</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">275 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Магній B6" data-price="275"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="meds" data-name="Парацетамол 500 мг">
+            <div class="card product-card h-100">
+              <div class="product-img">💊</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Ліки</span>
+                <h6 class="card-title">Парацетамол 500 мг</h6>
+                <p class="text-muted small flex-grow-1">Жарознижуюче, 20 таблеток</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">65 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Парацетамол 500 мг" data-price="65"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="meds" data-name="Назальний спрей">
+            <div class="card product-card h-100">
+              <div class="product-img">👃</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Ліки</span>
+                <h6 class="card-title">Назальний спрей</h6>
+                <p class="text-muted small flex-grow-1">Від нежитю, 15 мл</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">120 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Назальний спрей" data-price="120"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="meds" data-name="Активоване вугілля">
+            <div class="card product-card h-100">
+              <div class="product-img">⚫</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Ліки</span>
+                <h6 class="card-title">Активоване вугілля</h6>
+                <p class="text-muted small flex-grow-1">Сорбент, 10 таблеток</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">35 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Активоване вугілля" data-price="35"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="cosmetics" data-name="Крем зволожуючий">
+            <div class="card product-card h-100">
+              <div class="product-img">🧴</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Косметика</span>
+                <h6 class="card-title">Крем зволожуючий</h6>
+                <p class="text-muted small flex-grow-1">Для сухої шкіри, без парабенів</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">320 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Крем зволожуючий" data-price="320"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="cosmetics" data-name="Сонцезахисний крем SPF50">
+            <div class="card product-card h-100">
+              <div class="product-img">☀️</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Косметика</span>
+                <h6 class="card-title">Сонцезахисний крем SPF50</h6>
+                <p class="text-muted small flex-grow-1">Захист від UV, 50 мл</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">395 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Сонцезахисний крем SPF50" data-price="395"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="hygiene" data-name="Антисептик для рук">
+            <div class="card product-card h-100">
+              <div class="product-img">🧼</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Гігієна</span>
+                <h6 class="card-title">Антисептик для рук</h6>
+                <p class="text-muted small flex-grow-1">Спиртовий, 100 мл</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">75 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Антисептик для рук" data-price="75"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="hygiene" data-name="Медичні маски (10 шт)">
+            <div class="card product-card h-100">
+              <div class="product-img">😷</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Гігієна</span>
+                <h6 class="card-title">Медичні маски (10 шт)</h6>
+                <p class="text-muted small flex-grow-1">Тришарові, одноразові</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">90 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Медичні маски (10 шт)" data-price="90"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="hygiene" data-name="Пластирі набір">
+            <div class="card product-card h-100">
+              <div class="product-img">🩹</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Гігієна</span>
+                <h6 class="card-title">Пластирі набір</h6>
+                <p class="text-muted small flex-grow-1">20 шт, різні розміри</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">55 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Пластирі набір" data-price="55"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" data-category="vitamins" data-name="Екстракт ехінацеї">
+            <div class="card product-card h-100">
+              <div class="product-img">🌿</div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-eco-light text-eco align-self-start mb-2">Вітаміни</span>
+                <h6 class="card-title">Екстракт ехінацеї</h6>
+                <p class="text-muted small flex-grow-1">Натуральний імуностимулятор, 50 мл</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price">245 ₴</span>
+                  <button class="btn btn-sm btn-eco add-to-cart" data-name="Екстракт ехінацеї" data-price="245"><i class="bi bi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Порожній результат -->
+        <div id="catalog-empty" class="text-center text-muted py-5 d-none">
+          <i class="bi bi-search fs-1"></i>
+          <p class="mt-2">Нічого не знайдено. Спробуйте змінити запит.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-white"><i class="bi bi-flower1"></i> EcoPharma</h5>
+          <p class="small">Онлайн-аптека натуральних засобів для здоров'я та краси.</p>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="text-white">Меню</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6 class="text-white">Контакти</h6>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-telephone"></i> 0 800 000 000</li>
+            <li><i class="bi bi-envelope"></i> info@ecopharma.ua</li>
+            <li><i class="bi bi-geo-alt"></i> Київ, вул. Зелена, 1</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white">Ми в соцмережах</h6>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 my-4" />
+      <p class="text-center small mb-0">© <span id="year"></span> EcoPharma. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
