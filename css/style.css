@@ -1596,6 +1596,21 @@ main {
   white-space: nowrap;
 }
 
+/* Хедери на вузьких десктопах: щільніші відступи, щоб 4 пункти меню + контакти влазили в один ряд */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-header,
+  .page-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero-nav,
+  .page-nav {
+    margin-left: 40px;
+    gap: 24px;
+  }
+}
+
 /* ===== Сторінка «Наші Відділення» ===== */
 .branches-page {
   background-color: #fff;
@@ -2063,6 +2078,94 @@ main {
 .news-grid-card:hover .news-grid-action i {
   transform: translateX(4px);
   color: var(--green-dark, #006837) !important;
+}
+
+/* ===== Сторінка «Препарати»: сітка карток ===== */
+.drug-grid {
+  animation: bpFadeUp .55s .2s ease both;
+}
+
+/* Картка: фото з внутрішнім полем 12px, текст відступає 24px від краю */
+.drug-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 12px 12px 24px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.drug-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, .08);
+}
+
+.drug-card-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f1f4ec;
+}
+
+.drug-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+
+.drug-card:hover .drug-card-img {
+  transform: scale(1.05);
+}
+
+.drug-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-grow: 1;
+  padding: 0 12px;
+}
+
+.drug-card-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.drug-card-desc {
+  margin: 0 0 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+/* Кнопка притиснута до низу — на одному рівні в усіх картках ряду */
+.drug-card-btn {
+  margin-top: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drug-grid {
+    animation: none;
+  }
+
+  .drug-card,
+  .drug-card-img {
+    transition: none;
+  }
+
+  .drug-card:hover {
+    transform: none;
+  }
 }
 
 /* ===== СТИЛІ ДЛЯ СТОРІНКИ СТАТТІ (Figma) ===== */
