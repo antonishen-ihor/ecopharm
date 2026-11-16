@@ -1596,6 +1596,21 @@ main {
   white-space: nowrap;
 }
 
+/* Хедери на вузьких десктопах: щільніші відступи, щоб 4 пункти меню + контакти влазили в один ряд */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-header,
+  .page-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero-nav,
+  .page-nav {
+    margin-left: 40px;
+    gap: 24px;
+  }
+}
+
 /* ===== Сторінка «Наші Відділення» ===== */
 .branches-page {
   background-color: #fff;
@@ -2063,6 +2078,18 @@ main {
 .news-grid-card:hover .news-grid-action i {
   transform: translateX(4px);
   color: var(--green-dark, #006837) !important;
+}
+
+/* ===== Сторінка «Препарати» =====
+   Картки використовують стилі карток новин (.news-grid-*), тут лише анімація появи сітки */
+.drug-grid {
+  animation: bpFadeUp .55s .2s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drug-grid {
+    animation: none;
+  }
 }
 
 /* ===== СТИЛІ ДЛЯ СТОРІНКИ СТАТТІ (Figma) ===== */
