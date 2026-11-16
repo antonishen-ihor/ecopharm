@@ -56,64 +56,88 @@
         <h1 class="bp-title">Наші препарати</h1>
       </div>
 
-      <!-- Сітка препаратів.
-           Щоб замінити фото — змініть src у <img>; щоб додати препарат — скопіюйте блок <div class="col">. -->
-      <div class="drug-grid row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+      <!-- Сітка препаратів (картки у форматі карток новин).
+           Фото — src у <img>, посилання — href у <a>; щоб додати препарат — скопіюйте блок <div class="col">. -->
+      <div class="drug-grid news-grid-row row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
 
         <!-- Препарат 1 -->
-        <div class="col">
-          <article class="drug-card">
-            <div class="drug-card-img-wrapper">
-              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 1" class="drug-card-img" />
+        <div class="col news-grid-item">
+          <a href="#" class="news-grid-card text-decoration-none">
+            <div class="news-grid-img-wrapper">
+              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 1" class="news-grid-img" />
             </div>
-            <div class="drug-card-body">
-              <h2 class="drug-card-title">Назва препарату 1</h2>
-              <p class="drug-card-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
-              <a href="#" class="btn-outline-dark drug-card-btn">Детальніше</a>
+            <div class="news-grid-card-body">
+              <div class="news-grid-meta">
+                <span class="news-grid-tag">Капсули</span>
+              </div>
+              <h2 class="news-grid-title">Назва препарату 1</h2>
+              <p class="news-grid-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
+              <div class="news-grid-action">
+                <span class="news-grid-link">Детальніше</span>
+                <i class="bi bi-chevron-right text-dark"></i>
+              </div>
             </div>
-          </article>
+          </a>
         </div>
 
         <!-- Препарат 2 -->
-        <div class="col">
-          <article class="drug-card">
-            <div class="drug-card-img-wrapper">
-              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 2" class="drug-card-img" />
+        <div class="col news-grid-item">
+          <a href="#" class="news-grid-card text-decoration-none">
+            <div class="news-grid-img-wrapper">
+              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 2" class="news-grid-img" />
             </div>
-            <div class="drug-card-body">
-              <h2 class="drug-card-title">Назва препарату 2</h2>
-              <p class="drug-card-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
-              <a href="#" class="btn-outline-dark drug-card-btn">Детальніше</a>
+            <div class="news-grid-card-body">
+              <div class="news-grid-meta">
+                <span class="news-grid-tag">Краплі</span>
+              </div>
+              <h2 class="news-grid-title">Назва препарату 2</h2>
+              <p class="news-grid-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
+              <div class="news-grid-action">
+                <span class="news-grid-link">Детальніше</span>
+                <i class="bi bi-chevron-right text-dark"></i>
+              </div>
             </div>
-          </article>
+          </a>
         </div>
 
         <!-- Препарат 3 -->
-        <div class="col">
-          <article class="drug-card">
-            <div class="drug-card-img-wrapper">
-              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 3" class="drug-card-img" />
+        <div class="col news-grid-item">
+          <a href="#" class="news-grid-card text-decoration-none">
+            <div class="news-grid-img-wrapper">
+              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 3" class="news-grid-img" />
             </div>
-            <div class="drug-card-body">
-              <h2 class="drug-card-title">Назва препарату 3</h2>
-              <p class="drug-card-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
-              <a href="#" class="btn-outline-dark drug-card-btn">Детальніше</a>
+            <div class="news-grid-card-body">
+              <div class="news-grid-meta">
+                <span class="news-grid-tag">Мазь</span>
+              </div>
+              <h2 class="news-grid-title">Назва препарату 3</h2>
+              <p class="news-grid-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
+              <div class="news-grid-action">
+                <span class="news-grid-link">Детальніше</span>
+                <i class="bi bi-chevron-right text-dark"></i>
+              </div>
             </div>
-          </article>
+          </a>
         </div>
 
         <!-- Препарат 4 -->
-        <div class="col">
-          <article class="drug-card">
-            <div class="drug-card-img-wrapper">
-              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 4" class="drug-card-img" />
+        <div class="col news-grid-item">
+          <a href="#" class="news-grid-card text-decoration-none">
+            <div class="news-grid-img-wrapper">
+              <img loading="lazy" src="assets/product-placeholder.svg" alt="Препарат 4" class="news-grid-img" />
             </div>
-            <div class="drug-card-body">
-              <h2 class="drug-card-title">Назва препарату 4</h2>
-              <p class="drug-card-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
-              <a href="#" class="btn-outline-dark drug-card-btn">Детальніше</a>
+            <div class="news-grid-card-body">
+              <div class="news-grid-meta">
+                <span class="news-grid-tag">Розчин</span>
+              </div>
+              <h2 class="news-grid-title">Назва препарату 4</h2>
+              <p class="news-grid-desc">Короткий опис препарату: форма випуску, склад та основне призначення.</p>
+              <div class="news-grid-action">
+                <span class="news-grid-link">Детальніше</span>
+                <i class="bi bi-chevron-right text-dark"></i>
+              </div>
             </div>
-          </article>
+          </a>
         </div>
 
       </div>
